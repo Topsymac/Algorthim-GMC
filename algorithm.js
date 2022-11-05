@@ -14,10 +14,7 @@ Use three variables as counters.
 */
 // SOLUTION TO FIRST TASK
 
-var sentence = prompt("Enter a sentence");
-
-
-
+// var sentence = prompt("Enter a sentence");
 // sentence = sentence.toLowerCase();
 // var s = sentence.split('');
 
@@ -58,38 +55,39 @@ Initialize sum = 0. Compare each element of set one with the second set and if e
 
 // SOLUTION TO SECOND TASK
 
-// function distinctSum(arr1, arr2) {
-//     var j = 0;
-//     var m = 0;
-//     var x = 0;
-//     var sum = 0;
+function distinctSum(arr1, arr2) {
+    var j = 0;
+    var m = 0;
+    var x = 0;
+    var sum = 0;
 
-//     while (j < arr1.length) {
-//         for (i = 0; i < arr2.length; i++) {
-//             if (arr1[j] == arr2[i]) {
-//                 x = x + 1;
-//             }
-//         }
-//         if (x == 0) {
-//             sum = sum + arr1[j];
-//         }
-//         x = 0;
-//         i = 0;
+    while (j < arr1.length) {
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1[j] == arr2[i]) {
+                x = x + 1;
+            }
+        }
+        if (x == 0) {
+            sum = sum + arr1[j];
+        }
+        x = 0;
+        i = 0;
 
-//         j++
-//     }
-//     while (m < arr2.length) {
-//         for (n = 0; n < arr1.length; n++) {
-//             if (arr2[m] == arr1[n]) {
-//                 x = x + 1;
-//             }
-//         }
-//         if (x == 0) {
-//             sum = sum + arr2[m];
-//         }
-//         x = 0;
-//         n = 0;
-//         m++
-//     }
-//     alert(sum);
-// }
+        j++
+    }
+    while (m < arr2.length) {
+        for (n = 0; n < arr1.length; n++) {
+            if (arr2[m] == arr1[n]) {
+                x = x + 1;
+            }
+        }
+        if (x == 0) {
+            sum = sum + arr2[m];
+        }
+        x = 0;
+        n = 0;
+        m++
+    }
+    alert(sum);
+}
+distinctSum([2, 5, 6, 9], [1, 8, 2, 5]);
