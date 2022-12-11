@@ -14,29 +14,33 @@ Use three variables as counters.
 */
 // SOLUTION TO FIRST TASK
 
-// var sentence = prompt("Enter a sentence");
-// sentence = sentence.toLowerCase();
-// var s = sentence.split('');
+var sentence = prompt("Enter a sentence");
+sentence = sentence.toLowerCase();
+var s = sentence.split('');
 
-// i = s.length - 2;
-// var j = 0;
-// var word = 0;
-// var vowel = 0;
+i = s.length - 2;
+var j = 0;
+var word = 0;
+var vowel = 0;
 
-// while (j <= i) {
-//     if (s[j] === ' ') {
-//         word = word + 1;
-//     }
-//     if (s[j] === 'a' || s[j] === 'e' || s[j] === 'i' || s[j] === 'o' || s[j] === 'u') {
-//         vowel = vowel + 1;
-//         j++;
-//     } else {
-//         j++;
-//     }
+while (j <= i) {
+    if (s[j] === ' ') {
+        word = word + 1;
+    }
+    if (s[j] === 'a' || s[j] === 'e' || s[j] === 'i' || s[j] === 'o' || s[j] === 'u') {
+        vowel = vowel + 1;
+        j++;
+    } else {
+        j++;
+    }
 
-// }
-// word = word + 1;
-// console.log(word + "," + vowel);
+}
+word = word + 1;
+console.log(word + "," + vowel);
+
+
+
+
 
 
 
@@ -90,4 +94,3 @@ function distinctSum(arr1, arr2) {
     }
     alert(sum);
 }
-distinctSum([2, 5, 6, 9], [1, 8, 2, 5]);
